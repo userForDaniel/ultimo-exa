@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon"
+        href="https://www.rae.es/sites/default/files/styles/wysiwyg_100_/public/2021-07/ramdomtwitter_Mesa%20de%20trabajo%201.png?itok=JfO9YVoD">
+    <title>SISTEMAS</title>
+</head>
+
+<body class="grid-container">
+    
+    
+    <h1 class="navbar">&nbsp&nbsp☼-Registro de Estudiante-☼</h1>
+
+
+    <section class="main"><br>
+        <br>Item:<br>
+        <input type="number" min="1" class="caja" id="Item" placeholder="Item" required><br> <br>
+        <br>Nombres:<br>
+        <input type="text" class="caja" id="nombres" placeholder="Nombres" required><br> Sexo<br>
+        <select name="select" class="operacion" Id="sexo01" onchange="operacion()">
+            <option value="0" disabled selected >Sexo</option>
+            <option value="Masculino" >Masculino</option>
+            <option value="Femenino" >Femenino</option>
+            
+        </select><br> 
+        <br><br> <br> Ciclo:<br>
+
+       <select name="select" class="operacion" Id="ciclo" onchange="operacion()">
+            <option value="0" disabled selected >Seleccionar Ciclo</option>
+            <option value="I" >I</option>
+            <option value="II" >II</option>
+            <option value="III" >III</option>
+            <option value="IV" >IV</option>
+            <option value="V" >V</option>
+            <option value="VI" >VI</option>
+            <option value="VII" >VII</option>
+            <option value="VIII" >VIII</option>
+            <option value="IX" >IX</option>
+            <option value="X" >X</option>
+        </select><br>
+        
+       
+       <br><br><br><br>Escuela Profesional:<br>
+
+        <select name="select" class="operacion" Id="Escuela" onchange="operacion()">
+            <option value="0" disabled selected >Seleccionar Escuela</option>
+            <option value="Arquitectura" >Arquitectura</option>
+            <option value="Sistemas" >Ing Sistemas</option>
+            <option value="Alimentos" >Alimentos</option>
+            <option value="Img Ambiental" >Img Ambiental</option>
+            <option value="Ing Civil" >Ing Civil</option>
+        </select><br>
+
+        <br><br> <br> <br>
+        <button class="boton" onclick="registrar()">Agregar</button><br><br>
+    </section>
+    <div class="container max">
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Nombres</th>
+                    <th>Sexo</th>
+                    <th>Ciclo</th>
+                    <th>Escuela Profesional</th>
+                    <th>Accion</th>
+                </tr>
+            </thead>
+            <tbody id="tbd"></tbody>
+        </table>
+    </div>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
